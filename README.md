@@ -16,12 +16,11 @@ An example of the annotations:
 ## How to use
 
 ### Download
-Images need to be downloaded at the official cite of
-[Human3.6m dataset](http://vision.imar.ro/human3.6m/).
-We provide functions in './datasets/data_preparation.py' to compile Human3.6m videos into images which allows establishing 
-correct correspondence between image and annotation.
 
-The annotations can be downloaded [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put in "./datasets/json/"
+Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
+We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
+
+The annotations can be downloaded [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See Task section.
