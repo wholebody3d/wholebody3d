@@ -1,6 +1,6 @@
 # Human3.6m 3D-wholebody extension dataset
 
-This is the official repository for the paper ["TBD Paper name"](TBD).
+This is the official repository for the paper "TBD Paper name".
 
 ## What do we provide
 This is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D wholebody 
@@ -11,14 +11,16 @@ An example of the annotations:
 
 <img src="imgs/1.jpg" width="800" height="400">
 
-<img src="imgs/2.gif" width="600" height="600">
 
 ## How to use
 
 ### Download
 Images need to be downloaded at the official cite of
 [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
-The annotations are in this repository in "./datasets/json/"
+We provide functions in './datasets/data_preparation.py' to compile Human3.6m videos into images which allows establishing 
+correct correspondence between image and annotation.
+
+The annotations can be downloaded [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put in "./datasets/json/"
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See Task section.
@@ -39,7 +41,7 @@ XXX.json --- sample id --- 'image_path'
                         
                         
 ```
-We provide function in './utils/utils.py' to load json files
+We provide functions in './utils/utils.py' to load json files
 
 ### Task
 
@@ -65,7 +67,7 @@ chance being masked; otherwise 20% chance face masking;
 #### Task 3 Image to 3D complete wholebody prediction
 
  - Use task3_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
- - It use same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
+ - It uses same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
 
  - Use task3_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of task1 + 
 task2.)
