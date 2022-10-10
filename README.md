@@ -5,7 +5,7 @@ This is the official repository for the paper "TBD Paper name". The repo contain
 
 ## What is Human3.6M 3D WholeBody
 
-Human3.6M 3D WholeBody is the first large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset] (http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D wholebody annotations of 133 (17 for body, 6 for feet, 68 for face and 42 for hands) joints each. The skeleton layout is the same as 
+Human3.6M 3D WholeBody is the first large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D wholebody annotations of 133 (17 for body, 6 for feet, 68 for face and 42 for hands) joints each. The skeleton layout is the same as 
 [COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody).
 
 An example of the annotations:
