@@ -93,9 +93,14 @@ We provide a function to visualize 3D wholebody, as well as the same evaluation 
 
 ## Benchmark
 
+Coming Soon.
+
+<!---
 | Method | Task | Whole | Body | Raw Face  | Nose-aligned Face | Raw Hands | Wrist-aligned Hands |
 |--------|------|-------|------|-----------|-------------------|-----------|---------------------|
+-->
 
+<!---
 ## Citation
 
 If you use this dataset in your project, please cite this paper.
@@ -113,3 +118,4 @@ If you use this dataset in your project, please cite this paper.
 
 ```
 ```
+-->
