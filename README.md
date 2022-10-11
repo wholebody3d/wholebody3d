@@ -20,7 +20,7 @@ An example of the annotations:
 Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
-The annotations can be downloaded [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+The annotations can be downloaded from [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See Task section.
@@ -63,7 +63,7 @@ total of 100% chance incomplete input samples.
  - Use task2_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
  - To avoid cheating, this test set is not the same as Task 1, as well as already having mask on keypoint_2d
 
-#### Task 3 Image to 3D complete wholebody prediction
+#### Task 3: Image to 3D complete wholebody prediction
 
  - Use task3_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
  - It uses same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
@@ -75,7 +75,7 @@ task2.)
 ### Evaluation
 
 Please save your 3D wholebody predictions on test set into 'taskX_pred.json' using same data format as given one and
-submit [here]()
+submit [here]().
 
 We provide a function to visualize 3D wholebody, as well as the same evaluation function for the leaderboard in 
 'utils/utils.py'
