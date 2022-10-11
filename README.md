@@ -85,7 +85,7 @@ We provide a function to visualize 3D wholebody, as well as the same evaluation 
 1. This dataset is **ONLY** for research and non-commercial use. 
    The annotations of this dataset belong to [TBD](), and are licensed under a [TBD]().
 
-2. For commercial usage, please [contact us](mailto:wholebody3d@gmail.com?subject=Commercial%20Use)
+2. For commercial usage, please [contact us](mailto:wholebody3d@gmail.com?subject=Commercial%20Use).
 
 3. We do not own the copyright of the images. Use of the images must abide by the 
    [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
