@@ -12,7 +12,7 @@ An example of the annotations:
 
 <img src="imgs/1.jpg" width="800" height="400">
 
-Layout from COCO-WholeBody:
+Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-WholeBody).
 
 <img src="imgs/Fig2_anno.png" width="600" height="600">
 
