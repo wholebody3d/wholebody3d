@@ -306,7 +306,7 @@ def draw_skeleton(vec, conf=None, pointsize=None, figsize=None, plt_show=False, 
             plt.close()
 
 # evaluation function same to the test
-# predict, groundtruth is shape Nx133x3
+# predict, groundtruth is shape N x 133 x 3
 def test_score(predict, groundtruth):
     count = [0,0,0,0,0,0,0,0,0]
     diff = predict - groundtruth
