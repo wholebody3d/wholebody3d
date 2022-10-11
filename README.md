@@ -1,6 +1,6 @@
 # Human3.6M 3D WholeBody Dataset
 
-This is the official repository for the paper "TBD Paper name". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
+This is the official repository for the paper "WH33L: A Dataset with Wholebody Human3.6m 3D Labels". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
 
 ## What is Human3.6M 3D WholeBody
@@ -41,7 +41,7 @@ XXX.json --- sample id --- 'image_path'
                         
                         
 ```
-We provide functions in './utils/utils.py' to load json files
+We provide functions in 'utils/utils.py' to load json files
 
 ### Task
 
@@ -56,10 +56,9 @@ We propose 3 different tasks to achieve with this extension:
 #### Task 2: 2D incomplete wholebody to 3D complete wholebody lifting
 
  - Use task1+2_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
-
  - Please apply masking on yourself during the training. The official masking strategy is: 40% chance that each joint has 25% 
-chance being masked; otherwise 20% chance face masking; 
-20% chance left hand masking; and 20% chance right hand masking.
+chance being masked; otherwise 20% chance face masking; 20% chance left hand masking; and 20% chance right hand masking, in a 
+total of 100% chance incomplete input samples.
 
  - Use task2_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
  - To avoid cheating, this test set is not the same as Task 1, as well as already having mask on keypoint_2d
@@ -79,7 +78,7 @@ Please save your 3D wholebody predictions on test set into 'taskX_pred.json' usi
 submit [here]()
 
 We provide a function to visualize 3D wholebody, as well as the same evaluation function for the leaderboard in 
-'.utils/utils.py'
+'utils/utils.py'
 
 ### Terms of Use
 
