@@ -45,11 +45,11 @@ XXX.json --- sample id --- 'image_path'
                         
                         
 ```
-We provide functions in 'utils/utils.py' to load json files
+We also provide a [script](utils/utils.py) to load json files.
 
 ### Task
 
-We propose 3 different tasks to achieve with this extension:
+We propose 3 different tasks along with the 3D WholeBody dataset:
 
 #### Task 1: 2D complete wholebody to 3D complete wholebody lifting
 
@@ -82,7 +82,7 @@ Please save your 3D wholebody predictions on test set into 'taskX_pred.json' usi
 submit [here]().
 
 We provide a function to visualize 3D wholebody, as well as the same evaluation function for the leaderboard in 
-'utils/utils.py'
+this [script](utils/utils.py)
 
 ### Terms of Use
 
