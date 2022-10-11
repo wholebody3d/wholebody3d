@@ -117,7 +117,7 @@ def get_limb(X, Y, Z=None, id1=0, id2=1):
                np.concatenate((np.expand_dims(Y[id1], 0), np.expand_dims(Y[id2], 0)), 0)
 
 # draw wholebody skeleton
-# conf: which joint to draw, conf=None draw all
+# conf: which joint to draw, conf=None draw all. vec has shape of batchsize x 133 x dim (2d or 3d)
 def draw_skeleton(vec, conf=None, pointsize=None, figsize=None, plt_show=False, save_path=None, inverse_z=True,
                   fakebbox=True, background=None):
     _, keypoint, d = vec.shape
