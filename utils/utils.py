@@ -1,5 +1,4 @@
 # imports
-import time
 import torch
 import json
 import matplotlib.pyplot as plt
@@ -117,7 +116,7 @@ def get_limb(X, Y, Z=None, id1=0, id2=1):
                np.concatenate((np.expand_dims(Y[id1], 0), np.expand_dims(Y[id2], 0)), 0)
 
 # draw wholebody skeleton
-# conf: which joint to draw, conf=None draw all. vec has shape of batchsize x 133 x dim (2d or 3d)
+# conf: which joint to draw, conf=None draw all
 def draw_skeleton(vec, conf=None, pointsize=None, figsize=None, plt_show=False, save_path=None, inverse_z=True,
                   fakebbox=True, background=None):
     _, keypoint, d = vec.shape
@@ -304,36 +303,4 @@ def draw_skeleton(vec, conf=None, pointsize=None, figsize=None, plt_show=False, 
         if save_path is not None:
             fig.savefig(save_path)
             plt.close()
-
-# evaluation function same to the test
-# predict, groundtruth is shape N x 133 x 3
-def test_score(predict, groundtruth):
-    count = [0,0,0,0,0,0,0,0,0]
-    diff = predict - groundtruth
-    diff1 = diff - (diff[:, 11:12, :] + diff[:, 12:13, :]) / 2  # pelvis align
-    diff10 = diff1[:, :23, :]  # pelvis align body part
-    diff2 = (diff - diff[:, 0:1, :])[:, 23:91, :]  # nose align face
-    diff31 = (diff - diff[:, 91:92, :])[:, 91:112, :]  # wrist aligned left hand
-    diff32 = (diff - diff[:, 112:113, :])[:, 112:, :]  # wrist aligned right hand
-
-    diff = torch.sqrt(torch.sum(torch.square(diff), dim=-1))
-
-    count[0] = torch.mean(diff).item()
-    count[1] = torch.mean(diff[:, :23]).item()
-    count[2] = torch.mean(diff[:, 23:91]).item()
-    count[3] = torch.mean(diff[:, 91:]).item()
-    count[4] = torch.mean(torch.sqrt(torch.sum(torch.square(diff1), dim=-1))).item()
-    count[5] = torch.mean(torch.sqrt(torch.sum(torch.square(diff10), dim=-1))).item()
-    count[6] = torch.mean(torch.sqrt(torch.sum(torch.square(diff2), dim=-1))).item()
-    count[7] = torch.mean(torch.sqrt(torch.sum(torch.square(diff31), dim=-1))).item() \
-               + torch.mean(torch.sqrt(torch.sum(torch.square(diff32), dim=-1))).item()
-
-    print("MPJPE is " + str(count[0]) + ' mm')
-    print("MPJPE on body is " + str(count[1]) + ' mm')
-    print("MPJPE on face is " + str(count[2]) + ' mm')
-    print("MPJPE in hands is " + str(count[3]) + ' mm')
-    print("Pelvis aligned MPJPE is " + str(count[4]) + ' mm')
-    print("Pelvis aligned MPJPE on body is " + str(count[5]) + ' mm')
-    print("Nose aligned MPJPE on face is " + str(count[6]) + ' mm')
-    print("Wrist aligned MPJPE in hands is " + str(count[7]/2) + ' mm')
 
