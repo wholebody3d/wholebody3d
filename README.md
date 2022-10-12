@@ -1,11 +1,11 @@
-# Human3.6M 3D WholeBody Dataset
+# H3WB: Human3.6M 3D WholeBody Dataset extension and benchmark
 
-This is the official repository for the paper "WH33L: A Dataset with Wholebody Human3.6m 3D Labels". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
+This is the official repository for the paper "H3WB: Human3.6M 3D WholeBody Dataset extension and benchmark". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
 
-## What is Human3.6M 3D WholeBody
+## What is H3WB
 
-Human3.6M 3D WholeBody is the first large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D wholebody annotations of 133 (17 for body, 6 for feet, 68 for face and 42 for hands) joints each. The skeleton layout is the same as 
+H3WB is the first large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D wholebody annotations of 133 (17 for body, 6 for feet, 68 for face and 42 for hands) joints each. The skeleton layout is the same as 
 [COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody).
 
 An example of the annotations:
