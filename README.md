@@ -81,8 +81,8 @@ task2.)
 Please save your 3D wholebody predictions on test set into 'taskX_pred.json' using same data format as given one and
 submit [here]().
 
-We provide a function to visualize 3D wholebody, as well as the same evaluation function for the leaderboard in 
-this [script](utils/utils.py)
+We provide a [function](utils/utils.py) to visualize 3D wholebody, as well as the evaluation function for the leaderboard in 
+this [script](test_leaderboard.py). Example of the uploaded predict json file is [here](https://drive.google.com/file/d/1KAOMDyW8eLuwHp55LjyLaA_rZihZJ5s_/view?usp=sharing)
 
 ### Terms of Use
 
