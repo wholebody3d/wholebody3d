@@ -1,6 +1,6 @@
-# H3WB: Human3.6M 3D WholeBody Dataset extension and benchmark
+# H3WB: Human3.6M 3D WholeBody Dataset and benchmark
 
-This is the official repository for the paper "H3WB: Human3.6M 3D WholeBody Dataset extension and benchmark". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
+This is the official repository for the paper "H3WB: Human3.6M 3D WholeBody Dataset and benchmark". The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
 
 ## What is H3WB
@@ -74,7 +74,7 @@ total of 100% chance incomplete input samples.
 
  - Use task3_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of task1 + 
 task2.)
- - To avoid cheating, the sample id are not aligned with previous 2 tasks with some kind of random permutation)
+ - To avoid cheating, the test sample id are not aligned with previous 2 tasks with some kind of random permutation)
 
 ### Evaluation
 
@@ -82,16 +82,18 @@ Please save your 3D wholebody predictions on test set into 'taskX_pred.json' usi
 submit [here]().
 
 We provide a [function](utils/utils.py) to visualize 3D wholebody, as well as the evaluation function for the leaderboard in 
-this [script](test_leaderboard.py). Example of the uploaded predict json file is [here](https://drive.google.com/file/d/1KAOMDyW8eLuwHp55LjyLaA_rZihZJ5s_/view?usp=sharing)
+this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/1KAOMDyW8eLuwHp55LjyLaA_rZihZJ5s_/view?usp=sharing)
 
 ### Terms of Use
 
 1. This dataset is **ONLY** for research and non-commercial use. 
    The annotations of this dataset belong to [TBD](), and are licensed under a [TBD]().
 
+<!---
 2. For commercial usage, please [contact us](mailto:wholebody3d@gmail.com?subject=Commercial%20Use).
+-->
 
-3. We do not own the copyright of the images. Use of the images must abide by the 
+2. We do not own the copyright of the images. Use of the images must abide by the 
    [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
 
 ## Benchmark
