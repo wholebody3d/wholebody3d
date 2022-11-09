@@ -105,22 +105,20 @@ Coming Soon.
 |--------|------|-------|------|-----------|-------------------|-----------|---------------------|
 -->
 
-<!---
 ## Citation
 
 If you use this dataset in your project, please cite this paper.
 
 ```
 @inproceedings{XXX,
-  title={},
+  title={H3WB: Human3.6M 3D WholeBody Dataset and benchmark},
   author={Anonymous for now},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition (CVPR)},    
-  year={2022}
+  booktitle={},    
+  year={}
 }
 ```
--->
 
-Reference
+## Reference
 
 ```
 @article{h36m_pami,
@@ -129,13 +127,13 @@ Reference
  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
  publisher = {IEEE Computer Society},
  year = {2014}
- } 
+} 
  
- @inproceedings{IonescuSminchisescu11,
+@inproceedings{IonescuSminchisescu11,
  author = {Catalin Ionescu, Fuxin Li, Cristian Sminchisescu},
  title = {Latent Structured Models for Human Pose Estimation},
  booktitle = {International Conference on Computer Vision},
  year = {2011}
- }
+}
 ```
 
