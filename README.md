@@ -118,9 +118,24 @@ If you use this dataset in your project, please cite this paper.
   year={2022}
 }
 ```
-
-## Reference
-
-```
-```
 -->
+
+Reference
+
+```
+@article{h36m_pami,
+ author = {Ionescu, Catalin and Papava, Dragos and Olaru, Vlad and Sminchisescu, Cristian},
+ title = {Human3.6M: Large Scale Datasets and Predictive Methods for 3D Human Sensing in Natural Environments},
+ journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+ publisher = {IEEE Computer Society},
+ year = {2014}
+ } 
+ 
+ @inproceedings{IonescuSminchisescu11,
+ author = {Catalin Ionescu, Fuxin Li, Cristian Sminchisescu},
+ title = {Latent Structured Models for Human Pose Estimation},
+ booktitle = {International Conference on Computer Vision},
+ year = {2011}
+ }
+```
+
