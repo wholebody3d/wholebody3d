@@ -24,7 +24,7 @@ Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-Whole
 Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
-The annotations can be downloaded from [here](https://drive.google.com/file/d/1ljJ9Euc5y9hfJLfw-B6v5bsaiqckymaD/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+The annotations can be downloaded from [here](https://drive.google.com/file/d/1O4qXYIcRuvcLXr_bMqIetpWpwTciDPER/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See Task section.
