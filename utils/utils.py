@@ -16,8 +16,8 @@ def json_loader(data_path, task=1, type='train'):
     target_list = []
     bbox_list = []
     if type == 'train':
-        if (task == 1) or (task == 2):
-            data = json.load(open(data_path+'/task1+2_train.json'))
+        if (task == 1) or (task == 2)  or ('2D' in task):
+            data = json.load(open(data_path+'/2Dto3D_train.json'))
             length = len(data)
             for i in range(length):
                 sample_2d = torch.zeros(1, 133, 2)
@@ -31,8 +31,8 @@ def json_loader(data_path, task=1, type='train'):
                 input_list.append(sample_2d)
                 target_list.append(sample_3d)
             return input_list, target_list
-        elif (task == 3):
-            data = json.load(open(data_path+'/task3_train.json'))
+        elif (task == 3) or ('RGB' in task):
+            data = json.load(open(data_path+'/RGBto3D_train.json'))
             length = len(data)
             for i in range(length):
                 sample_3d = torch.zeros(1, 133, 3)
@@ -50,8 +50,8 @@ def json_loader(data_path, task=1, type='train'):
                 target_list.append(sample_3d)
             return input_list, target_list, bbox_list
     elif type == 'test':
-        if (task == 1):
-            data = json.load(open(data_path+'/task1_test_2d.json'))
+        if (task == 1)  or (('2D' in task) and ('I2D' not in task)):
+            data = json.load(open(data_path+'/2Dto3D_test_2d.json'))
             length = len(data)
             for i in range(length):
                 sample_2d = torch.zeros(1, 133, 2)
@@ -61,8 +61,8 @@ def json_loader(data_path, task=1, type='train'):
                 id_list.append((i//4)*8+(i%4))
                 input_list.append(sample_2d)
             return id_list, input_list
-        elif (task == 2):
-            data = json.load(open(data_path+'/task2_test_2d.json'))
+        elif (task == 2) or ('I2D' in task):
+            data = json.load(open(data_path+'/I2Dto3D_test_2d.json'))
             length = len(data)
             for i in range(length):
                 sample_2d = torch.zeros(1, 133, 2)
@@ -72,8 +72,8 @@ def json_loader(data_path, task=1, type='train'):
                 id_list.append((i//4)*8+(i%4)+4)
                 input_list.append(sample_2d)
             return id_list, input_list
-        elif (task == 3):
-            data = json.load(open(data_path+'/task3_test_img.json'))
+        elif (task == 3) or ('RGB' in task):
+            data = json.load(open(data_path+'/RGBto3D_test_img.json'))
             length = len(data)
             for i in range(length):
                 id_list.append(i)
@@ -91,7 +91,7 @@ def json_loader_part(data_path):
     input_list = []
     target_list = []
     for part in range(4):
-        data = json.load(open(data_path+'/task1+2_train_part'+str(part+1)+'.json'))
+        data = json.load(open(data_path+'/2Dto3D_train_part'+str(part+1)+'.json'))
         length = len(data)
         for i in range(length):
             sample_2d = torch.zeros(1, 133, 2)
