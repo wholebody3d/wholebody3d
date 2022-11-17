@@ -16,7 +16,7 @@ def json_loader(data_path, task=1, type='train'):
     target_list = []
     bbox_list = []
     if type == 'train':
-        if (task == 1) or (task == 2)  or ('2D' in task):
+        if (task == 1) or (task == 2)  or ('2D' in str(task)):
             data = json.load(open(data_path+'/2Dto3D_train.json'))
             length = len(data)
             for i in range(length):
@@ -31,7 +31,7 @@ def json_loader(data_path, task=1, type='train'):
                 input_list.append(sample_2d)
                 target_list.append(sample_3d)
             return input_list, target_list
-        elif (task == 3) or ('RGB' in task):
+        elif (task == 3) or ('RGB' in str(task)):
             data = json.load(open(data_path+'/RGBto3D_train.json'))
             length = len(data)
             for i in range(length):
@@ -50,7 +50,7 @@ def json_loader(data_path, task=1, type='train'):
                 target_list.append(sample_3d)
             return input_list, target_list, bbox_list
     elif type == 'test':
-        if (task == 1)  or (('2D' in task) and ('I2D' not in task)):
+        if (task == 1)  or (('2D' in str(task)) and ('I2D' not in str(task))):
             data = json.load(open(data_path+'/2Dto3D_test_2d.json'))
             length = len(data)
             for i in range(length):
@@ -61,7 +61,7 @@ def json_loader(data_path, task=1, type='train'):
                 id_list.append((i//4)*8+(i%4))
                 input_list.append(sample_2d)
             return id_list, input_list
-        elif (task == 2) or ('I2D' in task):
+        elif (task == 2) or ('I2D' in str(task)):
             data = json.load(open(data_path+'/I2Dto3D_test_2d.json'))
             length = len(data)
             for i in range(length):
@@ -72,7 +72,7 @@ def json_loader(data_path, task=1, type='train'):
                 id_list.append((i//4)*8+(i%4)+4)
                 input_list.append(sample_2d)
             return id_list, input_list
-        elif (task == 3) or ('RGB' in task):
+        elif (task == 3) or ('RGB' in str(task)):
             data = json.load(open(data_path+'/RGBto3D_test_img.json'))
             length = len(data)
             for i in range(length):
