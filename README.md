@@ -24,7 +24,7 @@ Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-Whole
 Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
-The annotations can be downloaded from [here](https://drive.google.com/file/d/1K6l5w_2jfK3MIpCbd0EZ0wTjs9Bd0Hbf/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+The annotations can be downloaded from [here](https://drive.google.com/file/d/1ljJ9Euc5y9hfJLfw-B6v5bsaiqckymaD/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See Task section.
@@ -51,34 +51,34 @@ We also provide a [script](utils/utils.py) to load json files.
 
 We propose 3 different tasks along with the 3D WholeBody dataset:
 
-#### Task 1: 2D complete wholebody to 3D complete wholebody lifting
+#### Task 1 (2D to 3D): 2D complete wholebody to 3D complete wholebody lifting
 
- - Use task1+2_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
+ - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
 
- - Use task1_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
+ - Use 2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
 
-#### Task 2: 2D incomplete wholebody to 3D complete wholebody lifting
+#### Task 2 (I2D to 3D): 2D incomplete wholebody to 3D complete wholebody lifting
 
- - Use task1+2_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
+ - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
  - Please apply masking on yourself during the training. The official masking strategy is: 40% chance that each joint has 25% 
 chance being masked; otherwise 20% chance face masking; 20% chance left hand masking; and 20% chance right hand masking, in a 
 total of 100% chance incomplete input samples.
 
- - Use task2_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
+ - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
  - To avoid cheating, this test set is not the same as Task 1, as well as already having mask on keypoint_2d
 
-#### Task 3: Image to 3D complete wholebody prediction
+#### Task 3 (RGB to 3D): Image to 3D complete wholebody prediction
 
- - Use task3_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
+ - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
  - It uses same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
 
- - Use task3_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of task1 + 
-task2.)
+ - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of task 1 + 
+task 2.)
  - To avoid cheating, the test sample id are not aligned with previous 2 tasks with some kind of random permutation)
 
 ### Evaluation
 
-Please save your 3D wholebody predictions on test set into 'taskX_pred.json' using same data format as given one and
+Please save your 3D wholebody predictions on test set into 'taskX_pred.json' or 'XXto3D_pred.json' using same data format as given one and
 submit [here]().
 
 We provide a [function](utils/utils.py) to visualize 3D wholebody, as well as the evaluation function for the leaderboard in 
