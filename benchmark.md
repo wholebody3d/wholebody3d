@@ -16,7 +16,7 @@ We use the same layout from COCO-WholeBody: [Image source](https://github.com/ji
 <img src="imgs/Fig2_anno.png" width="300" height="300">
 
 
-### 1. 2D &rarr; 3D: 2D complete whole-body to 3D complete whole-body lifting
+### 1. Results for 2D &rarr; 3D task
 
 | Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand |
 |--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:| 
