@@ -96,18 +96,21 @@ Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 
 ## Citation
 
-If you use this dataset in your project, please cite this paper.
+If you find H3WB 3D WholeBody dataset useful for your project, please cite our paper as follows.
 
+> Yue Zhu, Nermin Samet, David Picard, "H3WB: Human3.6M 3D WholeBody Dataset and benchmark", arXiv, 2022.
+
+BibTeX entry:
 ```
 @inproceedings{XXX,
   title={H3WB: Human3.6M 3D WholeBody Dataset and benchmark},
-  author={Anonymous for now},
-  booktitle={},    
-  year={}
+  author={Yue Zhu, Nermin Samet, David Picard},
+  booktitle={arXiv},    
+  year={2022}
 }
 ```
 
-## Reference
+## References
 
 ```
 @article{h36m_pami,
