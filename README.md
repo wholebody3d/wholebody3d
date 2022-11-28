@@ -27,7 +27,7 @@ We provide a data preparation [script](datasets/data_preparation.py) to compile 
 The annotations can be downloaded from [here](https://drive.google.com/file/d/1O4qXYIcRuvcLXr_bMqIetpWpwTciDPER/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
 ### Annotation format
-Every json is in the following structure, but not every json contains all these values. See Task section.
+Every json is in the following structure, but not every json contains all these values. See [Tasks](#Tasks) section.
 ```
 XXX.json --- sample id --- 'image_path'
                         |
@@ -47,7 +47,7 @@ XXX.json --- sample id --- 'image_path'
 ```
 We also provide a [script](utils/utils.py) to load json files.
 
-### Task
+### Tasks
 
 We propose 3 different tasks along with the 3D WholeBody dataset:
 
