@@ -47,7 +47,7 @@ XXX.json --- sample id --- 'image_path'
 ```
 We also provide a [script](utils/utils.py) to load json files.
 
-### Tasks
+## Tasks
 
 We propose 3 different tasks along with the 3D WholeBody dataset:
 
@@ -76,7 +76,7 @@ total of 100% chance incomplete input samples.
 I2D &rarr; 3D tasks.)
  - To avoid cheating, the test sample ids are not aligned with previous 2 tasks with some kind of random permutation)
 
-### Evaluation
+## Evaluation
 
 Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one. Please send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request).
 
@@ -87,7 +87,7 @@ this [script](test_leaderboard.py). Example of the format of uploaded predict js
 
 Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 
-### Terms of Use
+## Terms of Use
 
 1. This project is released under the [MIT License](https://github.com/wholebody3d/wholebody3d/blob/main/LICENSE.md). 
 
