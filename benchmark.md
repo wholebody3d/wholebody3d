@@ -21,9 +21,9 @@ We use the same layout from COCO-WholeBody: [Image source](https://github.com/ji
 | Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand |
 |--------|------------|------|-------|-------------------|------|--------------------| 
 CanonPose<sup>*</sup> | 186.7 | 193.7 | 188.4 | 24.6 | 180.2 | 48.9 |
-SimpleBaseline | 125.4 | 125.7 | 115.9 | 24.6 | 140.7 | 42.5 |
-CanonPose w 3D supervision | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 38.3 |
-Large SimpleBaseline | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** |
+SimpleBaseline<sup>*</sup> | 125.4 | 125.7 | 115.9 | 24.6 | 140.7 | 42.5 |
+CanonPose w 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 38.3 |
+Large SimpleBaseline<sup>*</sup> | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** |
 Jointformer | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 |
 
 
