@@ -53,40 +53,39 @@ We propose 3 different tasks along with the 3D WholeBody dataset:
 
 #### 2D &rarr; 3D: 2D complete whole-body to 3D complete whole-body lifting
 
- - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
+ - Use 2Dto3D_train.json for training/validation. It contains 80k 2D and 3D keypoints.
 
- - Use 2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
+ - Use 2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints.
 
 #### I2D &rarr; 3D: 2D incomplete whole-body to 3D complete whole-body lifting
 
- - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
+ - Use 2Dto3D_train.json for training/validation. It contains 80k 2D and 3D keypoints.
  - Please apply masking on yourself during the training. The official masking strategy is: 40% chance that each joint has 25% 
 chance being masked; otherwise 20% chance face masking; 20% chance left hand masking; and 20% chance right hand masking, in a 
 total of 100% chance incomplete input samples.
 
- - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
- - To avoid cheating, this test set is not the same as Task 1, as well as already having mask on keypoint_2d
+ - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints.
+ - To avoid cheating, this test set is not the same as 2D &rarr task, as well as already having mask on 2D keypoints.
 
 #### RGB &rarr; 3D: Image to 3D complete whole-body prediction
 
- - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
- - It uses same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
+ - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and 2D keypoints.
+ - It uses same sample id as 2Dto3D_train.json, so you can also find 2D keypoints if needed.
 
- - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of task 1 + 
-task 2.)
- - To avoid cheating, the test sample id are not aligned with previous 2 tasks with some kind of random permutation)
+ - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of 2D &rarr + 
+I2D &rarr tasks.)
+ - To avoid cheating, the test sample ids are not aligned with previous 2 tasks with some kind of random permutation)
 
 ### Evaluation
 
-Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one, and please send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request).
-
+Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one. Please send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request).
 
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in 
-this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
+this [script](test_leaderboard.py). Example of the format of uploaded predict json file can be found [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
 
 ## Benchmark
 
-Please refer to [benchmark.md](benchmark.md) for the results.
+Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 
 ### Terms of Use
 
