@@ -82,7 +82,7 @@ Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' u
 
 
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in 
-this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing)
+this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
 
 ## Benchmark
 
