@@ -78,10 +78,9 @@ task 2.)
 
 ### Evaluation
 
-Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one and
-submit [here]().
+Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one, and please send a downloadable link for the json file to [wholebody3d@gmail.com with subject [Test set evaluation request]](mailto:wholebody3d@gmail.com?subject=[Test set evaluation request]).
 
-We provide a [function](utils/utils.py) to visualize 3D wholebody, as well as the evaluation function for the leaderboard in 
+We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in 
 this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/1KAOMDyW8eLuwHp55LjyLaA_rZihZJ5s_/view?usp=sharing)
 
 ### Terms of Use
