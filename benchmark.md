@@ -19,7 +19,7 @@ We use the same layout from COCO-WholeBody: [Image source](https://github.com/ji
 ## Results for the 3D whole-body lifting from complete 2D whole-body keypoints (2D→3D)
 
 | Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand |
-|--------|------------|------|-------|-------------------|------|--------------------| 
+|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:| 
 CanonPose<sup>*</sup> | 186.7 | 193.7 | 188.4 | 24.6 | 180.2 | 48.9 |
 SimpleBaseline<sup>*</sup> | 125.4 | 125.7 | 115.9 | 24.6 | 140.7 | 42.5 |
 CanonPose w 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 38.3 |
