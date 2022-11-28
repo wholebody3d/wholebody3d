@@ -17,7 +17,7 @@ Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-Whole
 <img src="imgs/Fig2_anno.png" width="300" height="300">
 
 
-## How to use
+## H3WB Dataset
 
 ### Download
 
