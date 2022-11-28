@@ -51,13 +51,13 @@ We also provide a [script](utils/utils.py) to load json files.
 
 We propose 3 different tasks along with the 3D WholeBody dataset:
 
-#### Task 1 (2D &rarr; 3D): 2D complete wholebody to 3D complete wholebody lifting
+#### 2D &rarr; 3D: 2D complete wholebody to 3D complete wholebody lifting
 
  - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
 
  - Use 2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
 
-#### Task 2 (I2D &rarr; 3D): 2D incomplete wholebody to 3D complete wholebody lifting
+#### I2D &rarr; 3D: 2D incomplete wholebody to 3D complete wholebody lifting
 
  - Use 2Dto3D_train.json for training/validation. It contains 80k keypoint_2d and keypoint_3d
  - Please apply masking on yourself during the training. The official masking strategy is: 40% chance that each joint has 25% 
@@ -67,7 +67,7 @@ total of 100% chance incomplete input samples.
  - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k keypoint_2d
  - To avoid cheating, this test set is not the same as Task 1, as well as already having mask on keypoint_2d
 
-#### Task 3 (RGB &rarr; 3D): Image to 3D complete wholebody prediction
+#### RGB &rarr; 3D: Image to 3D complete wholebody prediction
 
  - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and keypoint_3d
  - It uses same sample id as task1+2_train.json, so you can also find keypoint_2D if needed
@@ -78,7 +78,7 @@ task 2.)
 
 ### Evaluation
 
-Please save your 3D wholebody predictions on test set into 'taskX_pred.json' or 'XXto3D_pred.json' using same data format as given one and
+Please save your 3D wholebody predictions on test set into 'XXto3D_pred.json' using same data format as given one and
 submit [here]().
 
 We provide a [function](utils/utils.py) to visualize 3D wholebody, as well as the evaluation function for the leaderboard in 
