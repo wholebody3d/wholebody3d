@@ -5,7 +5,8 @@ This is the official repository for the paper "H3WB: Human3.6M 3D WholeBody Data
 
 ## What is H3WB
 
-H3WB is the first large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) which contains 100k image-2D-3D whole-body annotations of 133 (17 for body, 6 for feet, 68 for face and 42 for hands) joints each. The skeleton layout is the same as 
+H3WB is a large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) and 
+contains 133 whole-body (17 for body, 6 for feet, 68 for face and 42 for hands) keypointannotations on 100K images. The skeleton layout is the same as 
 [COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody).
 
 Example annotations:
