@@ -78,8 +78,13 @@ I2D &rarr; 3D tasks.)
 
 ## Evaluation
 
+### Validation
+We do not provide a validation set. We encourage researchers to report 5-fold cross-validation average and standard deviation.
+
+### Evaluation on test set
 Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' using same data format as given one. Please send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request).
 
+### Visualization
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in 
 this [script](test_leaderboard.py). Example of the format of uploaded predict json file can be found [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
 
