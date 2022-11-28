@@ -89,15 +89,9 @@ Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 
 ### Terms of Use
 
-1. This dataset is **ONLY** for research and non-commercial use. 
-   The annotations of this dataset belong to [TBD](), and are licensed under a [TBD]().
+1. This project is released under the [MIT License](https://github.com/wholebody3d/wholebody3d/blob/main/LICENSE.md). 
 
-<!---
-2. For commercial usage, please [contact us](mailto:wholebody3d@gmail.com?subject=Commercial%20Use).
--->
-
-2. We do not own the copyright of the images. Use of the images must abide by the 
-   [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
+2. We do not own the copyright of the images. Use of the images must abide by the [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
 
 
 ## Citation
