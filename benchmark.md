@@ -26,7 +26,6 @@ CanonPose w 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 
 Large SimpleBaseline<sup>*</sup> | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** |
 Jointformer | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 |
 
-
 - Results are shown for the MPJPE metric in mm. 
-- Methods with ∗ output normalized predictions.
+- Methods with<sup>*</sup> output normalized predictions.
 - Unless stated otherwise, results are pelvis aligned.
