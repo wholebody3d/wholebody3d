@@ -4,10 +4,10 @@
 - The training sets contains all samples from S1, S5, S6 and S7, including 80k {image,2D,3D} triplets.
 - The test set contains all samples from S8, including 20k triplets. 
 - We report results for the MPJPE (Mean Per Joint Position Error) metric in mm. 
-- MPJPE for the whole-body, the body (keypoint 1-23), the face (keypoint 24-91) and the hands (keypoint 92-133) when whole-body aligned with the pelvis.
+- MPJPE for the whole-body, the body (keypoint 1-23), the face (keypoint 24-91) and the hands (keypoint 92-133) when whole-body aligned with the pelvis. - Unless stated otherwise, results are pelvis aligned.
 - MPJPE for the face when it is centered on the nose, i.e.aligned with keypoint 1,
 - MPJPE for the hands when hands are centered on the wrist, i.e left hand aligned with keypoint 92 and right hand aligned with keypoint 113.
-
+- Methods with<sup>*</sup> output normalized predictions.
 
 We use the same layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-WholeBody).
 
@@ -24,9 +24,6 @@ CanonPose w 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 
 Large SimpleBaseline<sup>*</sup> | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** |
 Jointformer | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 |
 
-- Methods with<sup>*</sup> output normalized predictions.
-- Unless stated otherwise, results are pelvis aligned.
-
 
 ### 2. Results for I2D &rarr; 3D task
 
@@ -36,8 +33,7 @@ CanonPose<sup>*</sup> | 285.0 | 264.4 | 319.7 | 31.9 | 240.0 | 56.2 |
 SimpleBaseline<sup>*</sup> | 268.8 | 252.0 | 227.9 | 34.0 | 344.3 | 83.4 |
 CanonPose + 3D supervision<sup>*</sup> | 163.6 | 155.9 | 161.3 | 22.2 | 171.4 | 47.4 |
 Large SimpleBaseline<sup>*</sup> | 131.4 | 131.6 | 120.6 | **19.8** | **148.8** | **44.8** |
-Jointformer | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 $ 53.5 |
+Jointformer | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 | 53.5 |
  
 
-- Methods with<sup>*</sup> output normalized predictions.
-- Unless stated otherwise, results are pelvis aligned.
+
