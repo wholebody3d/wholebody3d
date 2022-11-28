@@ -14,7 +14,7 @@ Example annotations:
 
 Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-WholeBody).
 
-<img src="imgs/Fig2_anno.png" width="600" height="600">
+<img src="imgs/Fig2_anno.png" width="300" height="300">
 
 
 ## How to use
