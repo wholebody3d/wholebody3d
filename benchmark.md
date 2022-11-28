@@ -26,3 +26,18 @@ Jointformer | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 |
 
 - Methods with<sup>*</sup> output normalized predictions.
 - Unless stated otherwise, results are pelvis aligned.
+
+
+### 2. Results for I2D &rarr; 3D task
+
+| Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand |
+|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:| 
+CanonPose<sup>*</sup> | 285.0 | 264.4 | 319.7 | 31.9 | 240.0 | 56.2 |
+SimpleBaseline<sup>*</sup> | 268.8 | 252.0 | 227.9 | 34.0 | 344.3 | 83.4 |
+CanonPose + 3D supervision<sup>*</sup> | 163.6 | 155.9 | 161.3 | 22.2 | 171.4 | 47.4 |
+Large SimpleBaseline<sup>*</sup> | 131.4 | 131.6 | 120.6 | **19.8** | **148.8** | **44.8** |
+Jointformer | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 $ 53.5 |
+ 
+
+- Methods with<sup>*</sup> output normalized predictions.
+- Unless stated otherwise, results are pelvis aligned.
