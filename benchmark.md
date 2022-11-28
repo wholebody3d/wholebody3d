@@ -1,5 +1,5 @@
 
-### Notes
+### Highlights
 
 - The training sets contains all samples from S1, S5, S6 and S7, including 80k {image,2D,3D} triplets.
 - The test set contains all samples from S8, including 20k triplets. 
