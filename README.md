@@ -82,7 +82,11 @@ Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json' u
 
 
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in 
-this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/1KAOMDyW8eLuwHp55LjyLaA_rZihZJ5s_/view?usp=sharing)
+this [script](test_leaderboard.py). Example of the format of uploaded predict json file is [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing)
+
+## Benchmark
+
+Please refer to [benchmark.md](benchmark.md) for the results.
 
 ### Terms of Use
 
@@ -96,14 +100,6 @@ this [script](test_leaderboard.py). Example of the format of uploaded predict js
 2. We do not own the copyright of the images. Use of the images must abide by the 
    [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
 
-## Benchmark
-
-Coming Soon.
-
-<!---
-| Method | Task | Whole | Body | Raw Face  | Nose-aligned Face | Raw Hands | Wrist-aligned Hands |
-|--------|------|-------|------|-----------|-------------------|-----------|---------------------|
--->
 
 ## Citation
 
