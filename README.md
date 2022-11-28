@@ -82,7 +82,7 @@ We propose 3 different tasks along with the 3D WholeBody dataset:
 We do not provide a validation set. We encourage researchers to report 5-fold cross-validation results with average and standard deviation values.
 
 ### Evaluation on test set
-Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json', and send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request). Example of the format of uploaded predict json file can be found [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
+Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json', and send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request). An example file to upload for the test set predictions can be found [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
 
 ### Visualization
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in  this [script](test_leaderboard.py). 
