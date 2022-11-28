@@ -6,7 +6,7 @@ This is the official repository for the paper "H3WB: Human3.6M 3D WholeBody Data
 ## What is H3WB
 
 H3WB is a large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) and 
-contains 133 whole-body (17 for body, 6 for feet, 68 for face and 42 for hands) keypointannotations on 100K images. The skeleton layout is the same as 
+contains 133 whole-body (17 for body, 6 for feet, 68 for face and 42 for hands) keypoint annotations on 100K images. The skeleton layout is the same as 
 [COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody).
 
 Example annotations:
@@ -54,25 +54,25 @@ We propose 3 different tasks along with the 3D WholeBody dataset:
 
 #### 2D &rarr; 3D: 2D complete whole-body to 3D complete whole-body lifting
 
- - Use 2Dto3D_train.json for training/validation. It contains 80k 2D and 3D keypoints.
+ - Use 2Dto3D_train.json for training and validation. It contains 80k 2D and 3D keypoints.
 
  - Use 2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints.
 
 #### I2D &rarr; 3D: 2D incomplete whole-body to 3D complete whole-body lifting
 
- - Use 2Dto3D_train.json for training/validation. It contains 80k 2D and 3D keypoints.
- - Please apply masking on yourself during the training. The official masking strategy is: 40% chance that each joint has 25% 
-chance being masked; otherwise 20% chance face masking; 20% chance left hand masking; and 20% chance right hand masking, in a 
-total of 100% chance incomplete input samples.
+ - Use 2Dto3D_train.json for training and validation. It contains 80k 2D and 3D keypoints.
+ - Please apply masking on yourself during the training. The official masking strategy is as follows:
+    - With 40\% probability, each keypoint has a 25\% chance of being masked,
+    - with 20\% probability, the face is entirely masked,
+    - with 20\% probability, the left hand is entirely masked,
+    - with 20\% probability, the right hand is entirely masked.
 
- - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints.
- - To avoid cheating, this test set is not the same as 2D &rarr; 3D task, as well as already having mask on 2D keypoints.
+ - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints. Note that this test set is different from the 2Dto3D_test_2d.json.
 
 #### RGB &rarr; 3D: Image to 3D complete whole-body prediction
 
- - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and 2D keypoints.
+ - Use RGBto3D_train.json for training and validation. It contains 80k image_path, bounding box and 2D keypoints.
  - It uses same sample id as 2Dto3D_train.json, so you can also find 2D keypoints if needed.
-
  - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of 2D &rarr; 3D and 
 I2D &rarr; 3D tasks.)
  - To avoid cheating, the test sample ids are not aligned with previous 2 tasks with some kind of random permutation)
