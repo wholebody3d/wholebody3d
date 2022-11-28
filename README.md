@@ -65,15 +65,15 @@ chance being masked; otherwise 20% chance face masking; 20% chance left hand mas
 total of 100% chance incomplete input samples.
 
  - Use I2Dto3D_test_2d.json for test on leaderboard. It contains 10k 2D keypoints.
- - To avoid cheating, this test set is not the same as 2D &rarr task, as well as already having mask on 2D keypoints.
+ - To avoid cheating, this test set is not the same as 2D &rarr; 3D task, as well as already having mask on 2D keypoints.
 
 #### RGB &rarr; 3D: Image to 3D complete whole-body prediction
 
  - Use RGBto3D_train.json for training/validation. It contains 80k image_path, bounding box and 2D keypoints.
  - It uses same sample id as 2Dto3D_train.json, so you can also find 2D keypoints if needed.
 
- - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of 2D &rarr + 
-I2D &rarr tasks.)
+ - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. (Test sample of 2D &rarr; 3D and 
+I2D &rarr; 3D tasks.)
  - To avoid cheating, the test sample ids are not aligned with previous 2 tasks with some kind of random permutation)
 
 ### Evaluation
