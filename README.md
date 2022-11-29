@@ -106,7 +106,7 @@ If you find H3WB 3D WholeBody dataset useful for your project, please cite our p
 
 BibTeX entry:
 ```
-@inproceedings{XXX,
+@inproceedings{h3wb,
   title={H3WB: Human3.6M 3D WholeBody Dataset and benchmark},
   author={Yue Zhu, Nermin Samet, David Picard},
   booktitle={arXiv},    
