@@ -1,6 +1,6 @@
-# H3WB: Human3.6M 3D WholeBody Dataset and benchmark
+# H3WB: Human3.6M 3D WholeBody Dataset and Benchmark
 
-This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dataset and benchmark"](https://arxiv.org/abs/2211.15692). The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
+This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dataset and Benchmark"](https://arxiv.org/abs/2211.15692). The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
 
 ## What is H3WB
