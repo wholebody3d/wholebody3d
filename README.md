@@ -2,6 +2,8 @@
 
 This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dataset and Benchmark"](https://arxiv.org/abs/2211.15692). The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
+For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
+
 
 ## What is H3WB
 
@@ -114,7 +116,7 @@ BibTeX entry:
 }
 ```
 
-## References
+Please also consider citing the following works.
 
 ```
 @article{h36m_pami,
