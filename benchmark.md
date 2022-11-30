@@ -4,7 +4,7 @@
 - The training sets contains all samples from S1, S5, S6 and S7, including 80k {image,2D,3D} triplets.
 - The test set contains all samples from S8, including 20k triplets. 
 - Methods with<sup>*</sup> output normalized predictions.
-- We are presented in MPJPE (Mean Per Joint Position Error) metric in mm. We report following:
+- Results are presented in MPJPE (Mean Per Joint Position Error) metric in mm. We report following:
     - MPJPE for the whole-body, the body (keypoint 1-23), the face (keypoint 24-91) and the hands (keypoint 92-133) when whole-body aligned with the pelvis. 
     - MPJPE for the face when it is centered on the nose, i.e.aligned with keypoint 1,
     - MPJPE for the hands when hands are centered on the wrist, i.e left hand aligned with keypoint 92 and right hand aligned with keypoint 113.
