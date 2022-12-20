@@ -87,21 +87,25 @@ def json_loader(data_path, task=1, type='train'):
             return id_list, input_list, bbox_list
 
 # load task1+2_train.json by parts in case the whole file is too big
-def json_loader_part(data_path):
+def json_loader_part(data_path, cv=0):
     input_list = []
     target_list = []
-    for part in range(4):
-        data = json.load(open(data_path+'/2Dto3D_train_part'+str(part+1)+'.json'))
+    if cv == 0:
+        load_part_id = [1,2,3,4,5]  # load all 5 files
+    else:
+        load_part_id = [cv]
+    for part in load_part_id:
+        data = json.load(open(data_path+'/2Dto3D_train_part'+str(part)+'.json'))
         length = len(data)
         for i in range(length):
             sample_2d = torch.zeros(1, 133, 2)
             sample_3d = torch.zeros(1, 133, 3)
             for j in range(133):
-                sample_2d[0, j, 0] = data[str(i)]['keypoints_2d'][str(j)]['x']
-                sample_2d[0, j, 1] = data[str(i)]['keypoints_2d'][str(j)]['y']
-                sample_3d[0, j, 0] = data[str(i)]['keypoints_3d'][str(j)]['x']
-                sample_3d[0, j, 1] = data[str(i)]['keypoints_3d'][str(j)]['y']
-                sample_3d[0, j, 2] = data[str(i)]['keypoints_3d'][str(j)]['z']
+                sample_2d[0, j, 0] = data[str(i+length*(part-1))]['keypoints_2d'][str(j)]['x']
+                sample_2d[0, j, 1] = data[str(i+length*(part-1))]['keypoints_2d'][str(j)]['y']
+                sample_3d[0, j, 0] = data[str(i+length*(part-1))]['keypoints_3d'][str(j)]['x']
+                sample_3d[0, j, 1] = data[str(i+length*(part-1))]['keypoints_3d'][str(j)]['y']
+                sample_3d[0, j, 2] = data[str(i+length*(part-1))]['keypoints_3d'][str(j)]['z']
             input_list.append(sample_2d)
             target_list.append(sample_3d)
     return input_list, target_list
