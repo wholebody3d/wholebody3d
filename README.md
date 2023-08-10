@@ -1,6 +1,6 @@
 # H3WB: Human3.6M 3D WholeBody Dataset and Benchmark
 
-This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dataset and Benchmark"](https://arxiv.org/abs/2211.15692). The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
+This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dataset and Benchmark"](https://arxiv.org/abs/2211.15692) (ICCV'23). The repo contains Human3.6M 3D WholeBody (H3WB) annotations proposed in this paper.
 
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
@@ -104,15 +104,15 @@ Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 
 If you find H3WB 3D WholeBody dataset useful for your project, please cite our paper as follows.
 
-> Yue Zhu, Nermin Samet, David Picard, "H3WB: Human3.6M 3D WholeBody Dataset and benchmark", arXiv, 2022.
+> Yue Zhu, Nermin Samet, David Picard, "H3WB: Human3.6M 3D WholeBody Dataset and benchmark", ICCV, 2023.
 
 BibTeX entry:
 ```
-@article{h3wb,
+@inproceedings{h3wb,
   title={H3WB: Human3.6M 3D WholeBody Dataset and benchmark},
   author={Yue Zhu, Nermin Samet, David Picard},
-  booktitle={arXiv},    
-  year={2022}
+  booktitle={International Conference on Computer Vision},    
+  year={2023}
 }
 ```
 
