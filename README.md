@@ -108,11 +108,13 @@ If you find H3WB 3D WholeBody dataset useful for your project, please cite our p
 
 BibTeX entry:
 ```
-@inproceedings{h3wb,
-  title={H3WB: Human3.6M 3D WholeBody Dataset and benchmark},
-  author={Yue Zhu, Nermin Samet, David Picard},
-  booktitle={International Conference on Computer Vision},    
-  year={2023}
+@InProceedings{Zhu_2023_ICCV,
+    author    = {Zhu, Yue and Samet, Nermin and Picard, David},
+    title     = {H3WB: Human3.6M 3D WholeBody Dataset and Benchmark},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {20166-20177}
 }
 ```
 
