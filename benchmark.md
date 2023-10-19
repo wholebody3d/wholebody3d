@@ -34,7 +34,7 @@ CanonPose [[2]](#2)<sup>*</sup> | 285.0 | 264.4 | 319.7 | 31.9 | 240.0 | 56.2 | 
 SimpleBaseline [[1]](#1)<sup>*</sup> | 268.8 | 252.0 | 227.9 | 34.0 | 344.3 | 83.4 | [ckpt](https://drive.google.com/file/d/1UatY3W2Q99t8J1SR3VUAeHMbF7ozyuOC/view?usp=share_link) |
 CanonPose [[2]](#2) with 3D supervision<sup>*</sup> | 163.6 | 155.9 | 161.3 | 22.2 | 171.4 | 47.4 | [ckpt](https://drive.google.com/file/d/1Yt1NDgBVjGBwRnwYNJzlJYyhXlImtDnq/view?usp=share_link) |
 Large SimpleBaseline [[1]](#1)<sup>*</sup> | 131.4 | 131.6 | 120.6 | **19.8** | **148.8** | **44.8** | [ckpt](https://drive.google.com/file/d/18M4jO8y3EOdzXida91_KZ12yS2LIJSO4/view?usp=share_link) |
-Jointformer [[3]](#3) | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 | 53.5 | [ckpt](https://drive.google.com/drive/folders/12LxnhN0YkVwNusPRYLl7jZJCJ6yr5Vsb?usp=sharing) |
+Jointformer [[3]](#3) | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 | 53.5 | [ckpt\(https://drive.google.com/drive/folders/12LxnhN0YkVwNusPRYLl7jZJCJ6yr5Vsb?usp=sharing) |
  
 
 ### 3. Results for RGB &rarr; 3D task
