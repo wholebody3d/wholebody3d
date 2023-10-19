@@ -17,13 +17,13 @@ We use the same layout from COCO-WholeBody: [Image source](https://github.com/ji
 
 ### 1. Results for 2D &rarr; 3D task
 
-| Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand | ckpt
-|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:| :--------------------:| 
-CanonPose [[2]](#2)<sup>*</sup> | 186.7 | 193.7 | 188.4 | 24.6 | 180.2 | 48.9 | [ckpt]()
-SimpleBaseline [[1]](#1)<sup>*</sup> | 125.4 | 125.7 | 115.9 | 24.6 | 140.7 | 42.5 | [ckpt]()
-CanonPose [[2]](#2) with 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 38.3 | [ckpt]()
-Large SimpleBaseline [[1]](#1)<sup>*</sup> | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** | [ckpt]()
-Jointformer [[3]](#3) | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 | [ckpt]()
+| Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand | ckpt |
+|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:|:--------------------:| 
+CanonPose [[2]](#2)<sup>*</sup> | 186.7 | 193.7 | 188.4 | 24.6 | 180.2 | 48.9 | [ckpt]() |
+SimpleBaseline [[1]](#1)<sup>*</sup> | 125.4 | 125.7 | 115.9 | 24.6 | 140.7 | 42.5 | [ckpt]()  |
+CanonPose [[2]](#2) with 3D supervision<sup>*</sup> | 117.7 | 117.5 | 112.0 | 17.9 | 126.9 | 38.3 | [ckpt]()  |
+Large SimpleBaseline [[1]](#1)<sup>*</sup> | 112.3 | 112.6 | 110.6 | **14.6** | **114.8**| **31.7** | [ckpt]() |
+Jointformer [[3]](#3) | **88.3** | **84.9** | **66.5** | 17.8 | 125.3 | 43.7 | [ckpt]() |
 
 
 ### 2. Results for I2D &rarr; 3D task
