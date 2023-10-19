@@ -39,11 +39,11 @@ Jointformer [[3]](#3) | **109.2** | **103.0** | **82.4** | **19.8** | 155.9 | 53
 
 ### 3. Results for RGB &rarr; 3D task
 
-| Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand |
-|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:| 
-SHN [[4]](#4) + SimpleBaseline [[1]](#1)<sup>*</sup> | 182.5 | 189.6 | 138.7 | 32.5 | 249.4 | 64.3 |
-CPN [[5]](#5) + Jointformer [[3]](#3) | **132.6** | **142.8** | **91.9** | **20.7** | **192.7** | **56.9** |
-Resnet50 [[6]](#6) | 166.7 | 151.6 | 123.6 | 26.3 | 244.9 | 63.1 |
+| Method | whole-body | body | face  | nose-aligned face | hand | wrist-aligned hand | ckpt |
+|--------|:------------:|:------:|:-------:|:-------------------:|:------:|:--------------------:|:--------------------:|
+SHN [[4]](#4) + SimpleBaseline [[1]](#1)<sup>*</sup> | 182.5 | 189.6 | 138.7 | 32.5 | 249.4 | 64.3 | [ckpt](https://drive.google.com/file/d/1keRMlvd3thiVBUKjhsK5P-W2zxiqoMEs/view?usp=share_link) [ckpt](https://drive.google.com/file/d/1SB65FznyoZtBbdB7ByK52yBja2KeSHHk/view?usp=share_link) |
+CPN [[5]](#5) + Jointformer [[3]](#3) | **132.6** | **142.8** | **91.9** | **20.7** | **192.7** | **56.9** | [ckpt](https://drive.google.com/file/d/18AHTO09gAi_B64v_YRmLqIFVLNHjakCE/view?usp=share_link) [ckpt]() |
+Resnet50 [[6]](#6) | 166.7 | 151.6 | 123.6 | 26.3 | 244.9 | 63.1 | [ckpt](https://drive.google.com/file/d/1kcGltEJ86K1f9i2ZM31Omxvv13kfLwIr/view?usp=share_link) |
 
 
 #### References
