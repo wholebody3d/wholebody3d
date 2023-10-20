@@ -35,7 +35,8 @@ Images can be downloaded from the official cite of [Human3.6m dataset](http://vi
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
 The annotations for H3WB can be downloaded from [here](https://drive.google.com/file/d/1WVscFZcFIxGi_doifFP3GLTsIbU-hjXO/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
-The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link)
+
+The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link).
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See [Tasks](#Tasks) section.
