@@ -16,7 +16,9 @@ For the 3D whole-body benchmark and results please refer to [benchmark.md](bench
 
 H3WB is a large-scale dataset for 3D whole-body pose estimation. It is an extension of [Human3.6m dataset](http://vision.imar.ro/human3.6m/) and 
 contains 133 whole-body (17 for body, 6 for feet, 68 for face and 42 for hands) keypoint annotations on 100K images. The skeleton layout is the same as 
-[COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody).
+[COCO-Wholebody dataset](https://github.com/jin-s13/COCO-WholeBody). Extensions to other popular 3D pose estimation datasets are ongoing and we already 
+have annotations for [Total Capture](http://www.cs.cmu.edu/~hanbyulj/totalcapture/). If you want your favorite multi-view dataset to get whole-body 3D 
+annotations, let us know!
 
 Example annotations:
 
