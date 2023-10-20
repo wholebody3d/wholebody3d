@@ -64,7 +64,7 @@ H3WB comes with pretrained models that were used to create the datasets. Model i
 
 | Dataset | Completion | Diffusion Hands | Diffusion Face |
 |---------|------------|-----------------|----------------|
-|  H3WB   |[ckpt](https://drive.google.com/file/d/1eJ-uz6RYtg3emGiu8IAY72UsUbpTVzzK/view?usp=share_link) | |ckpt](https://drive.google.com/file/d/1G17FaOqd5GlSm08wxMaxjwMmRSqgwXeF/view?usp=share_link) | [ckpt](https://drive.google.com/file/d/15ZUUZSqKGzVCNYRo4-PYqfsso7ajIb07/view?usp=share_link) |
+|  H3WB   | [ckpt](https://drive.google.com/file/d/1eJ-uz6RYtg3emGiu8IAY72UsUbpTVzzK/view?usp=share_link) | [ckpt](https://drive.google.com/file/d/1G17FaOqd5GlSm08wxMaxjwMmRSqgwXeF/view?usp=share_link) | [ckpt](https://drive.google.com/file/d/15ZUUZSqKGzVCNYRo4-PYqfsso7ajIb07/view?usp=share_link) |
 
 Pretrained models for the different tasks of the benchmark can be found in [benchmark.md](benchmark.md).
 
