@@ -4,6 +4,13 @@ This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dat
 
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
+## Table of Content
+- [About H3WB](#what-is-h3wb)
+- [Dataset](#h3wb-dataset)
+- [Pretrained models](#pretrained-models)
+- [Tasks](#tasks)
+- [Evaluation](#evaluation)
+- [How to cite](#how-to-cite)
 
 ## What is H3WB
 
@@ -27,7 +34,8 @@ Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-Whole
 Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
-The annotations can be downloaded from [here](https://drive.google.com/file/d/1WVscFZcFIxGi_doifFP3GLTsIbU-hjXO/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+The annotations for H3WB can be downloaded from [here](https://drive.google.com/file/d/1WVscFZcFIxGi_doifFP3GLTsIbU-hjXO/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link)
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See [Tasks](#Tasks) section.
@@ -49,6 +57,17 @@ XXX.json --- sample id --- 'image_path'
                         
 ```
 We also provide a [script](utils/utils.py) to load json files.
+
+## Pretrained models
+
+H3WB comes with pretrained models that were used to create the datasets. Model implementations can be found in the 'models/' folder. Please find chekpoints in the table below:
+
+| Dataset | Completion | Diffusion Hands | Diffusion Face |
+|---------|------------|-----------------|----------------|
+|  H3WB   |[ckpt](https://drive.google.com/file/d/1eJ-uz6RYtg3emGiu8IAY72UsUbpTVzzK/view?usp=share_link) | |ckpt](https://drive.google.com/file/d/1G17FaOqd5GlSm08wxMaxjwMmRSqgwXeF/view?usp=share_link) | [ckpt](https://drive.google.com/file/d/15ZUUZSqKGzVCNYRo4-PYqfsso7ajIb07/view?usp=share_link) |
+
+Pretrained models for the different tasks of the benchmark can be found in [benchmark.md](benchmark.md).
+
 
 ## Tasks
 
@@ -100,7 +119,7 @@ Please refer to [benchmark.md](benchmark.md) for the benchmark results.
 2. We do not own the copyright of the images. Use of the images must abide by the [Human3.6m License agreement](http://vision.imar.ro/human3.6m/eula.php).
 
 
-## Citation
+## How to cite
 
 If you find H3WB 3D WholeBody dataset useful for your project, please cite our paper as follows.
 
