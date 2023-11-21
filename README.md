@@ -46,7 +46,7 @@ We provide a data preparation [script](datasets/data_preparation.py) to compile 
 
 - The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link).
 
-- You could also download H3WB dataset in a format commonly employed for 3D pose estimation tasks [here](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link). We provide an accompanying [data preparation class](https://github.com/wholebody3d/wholebody3d/blob/main/utils/prepare_data_h3wb.py) for this format. We highly recommend this format for your experiments.
+- You could also download H3WB dataset in a format commonly employed for 3D pose estimation tasks [here](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link). We provide an accompanying [data preparation class](https://github.com/wholebody3d/wholebody3d/blob/main/utils/prepare_data_h3wb.py) for this format. We highly recommend this format for your experiments. The util files camera.py, mocap_dataset.py and skeleton.py are directly taken from [VideoPose](https://github.com/facebookresearch/VideoPose3D/tree/main/common) repository.
 
 
 ### Annotation format
