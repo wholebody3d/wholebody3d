@@ -4,6 +4,12 @@ This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dat
 
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
+## 🆕Updates
+
+- **`2023/11/21`** We have made H3WB dataset available in a format commonly employed for 3D pose estimation tasks. To facilitate your use of this format, we provide an accompanying data preparation class. We highly recommend this format for your experiments.
+  - [Link to download dataset in the new format](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link).
+  - [Link to data preparation class](https://github.com/wholebody3d/wholebody3d/blob/main/utils/prepare_data_h3wb.py).
+
 ## Table of Content
 - [About H3WB](#what-is-h3wb)
 - [Dataset](#h3wb-dataset)
@@ -33,12 +39,15 @@ Layout from COCO-WholeBody: [Image source](https://github.com/jin-s13/COCO-Whole
 
 ### Download
 
-Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
+- Images can be downloaded from the official cite of [Human3.6m dataset](http://vision.imar.ro/human3.6m/).
 We provide a data preparation [script](datasets/data_preparation.py) to compile Human3.6m videos into images which allows establishing correct correspondence between images and annotations.
 
-The annotations for H3WB can be downloaded from [here](https://drive.google.com/file/d/1WVscFZcFIxGi_doifFP3GLTsIbU-hjXO/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
+- The annotations for H3WB can be downloaded from [here](https://drive.google.com/file/d/1WVscFZcFIxGi_doifFP3GLTsIbU-hjXO/view?usp=sharing) and by default it is put under [datasets/json/](datasets/json/).
 
-The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link).
+- The annotations for T3WB can be downloaded from [here](https://drive.google.com/file/d/155DpAJZ4XY6Mov9pmhrGzRG4PywDlZv2/view?usp=share_link).
+
+- You could also download H3WB dataset in a format commonly employed for 3D pose estimation tasks [here](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link). We provide an accompanying [data preparation class](https://github.com/wholebody3d/wholebody3d/blob/main/utils/prepare_data_h3wb.py) for this format. We highly recommend this format for your experiments.
+
 
 ### Annotation format
 Every json is in the following structure, but not every json contains all these values. See [Tasks](#Tasks) section.
