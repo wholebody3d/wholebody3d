@@ -8,7 +8,6 @@
 import numpy as np
 import torch
 
-from common.utils import wrap
 from quaternion import qrot, qinverse
 
 def wrap(func, *args, unsqueeze=False):
