@@ -5,7 +5,7 @@ This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dat
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
 ## 🆕Updates
-
+- **`2024/01/09`** H3WB dataset is now supported in [MMPose](https://github.com/open-mmlab/mmpose) 🎉.
 - **`2023/11/21`** We have made H3WB dataset available in a format commonly employed for 3D pose estimation tasks. To facilitate your use of this format, we provide an accompanying data preparation class. We highly recommend this format for your experiments.
   - [Link to download dataset in the new format](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link).
   - [Link to data preparation class](https://github.com/wholebody3d/wholebody3d/blob/main/utils/prepare_data_h3wb.py).
