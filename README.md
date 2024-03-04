@@ -104,7 +104,7 @@ We propose 3 different tasks along with the 3D WholeBody dataset:
 
 #### RGB &rarr; 3D: Image to 3D complete whole-body prediction
 
- - Use RGBto3D_train.json for training and validation. It contains 80k image_path, bounding box and 2D keypoints.
+ - Use RGBto3D_train.json for training and validation. It contains 80k image_path, bounding box and 3D keypoints.
  - It has the same samples from the 2Dto3D_train.json, so you can also access to 2D keypoints if needed.
  - Use RGBto3D_test_img.json for test on leaderboard. It contains 20k image_path and bounding box. 
  - Note that the test sample ids are not aligned with previous 2 tasks.
