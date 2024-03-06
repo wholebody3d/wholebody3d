@@ -5,6 +5,9 @@ This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dat
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
 ## 🆕Updates
+- **`2024/03/06`** Due to the requests from the community we released the the test sets of H3WB dataset. Please refer to [Evaluation](#evaluation) for more information.
+  - [Link to download test set for 2D &rarr; 3D](https://drive.google.com/file/d/1xrzfR63pflnw8L9e631xyKe4TwUOOm4k/view?usp=share_link).
+  - [Link to download test set for I2D &rarr; 3D](https://drive.google.com/file/d/1GBOCjzIW0GLHHLHhGmUcB32Ke8PVjDXH/view?usp=sharing).
 - **`2024/01/09`** H3WB dataset is now supported in [MMPose](https://github.com/open-mmlab/mmpose) 🎉.
 - **`2023/11/21`** We have made H3WB dataset available in a format commonly employed for 3D pose estimation tasks. To facilitate your use of this format, we provide an accompanying data preparation class. We highly recommend this format for your experiments.
   - [Link to download dataset in the new format](https://drive.google.com/file/d/1LZh4Jsg3_ZKBF0iEPiexzoGHE4srLgfC/view?usp=share_link).
@@ -115,7 +118,11 @@ We propose 3 different tasks along with the 3D WholeBody dataset:
 We do not provide a validation set. We encourage researchers to report 5-fold cross-validation results with average and standard deviation values.
 
 ### Evaluation on test set
-Please save your 3D whole-body predictions on test set into 'XXto3D_pred.json', and send a downloadable link for the json file to [wholebody3d@gmail.com with subject Test set evaluation request](mailto:wholebody3d@gmail.com?subject=Test%20set%20evaluation%20request). An example file to upload for the test set predictions can be found [here](https://drive.google.com/file/d/10GqGJaNgrz1cTjrz4CpKqpeFF0LJBVDA/view?usp=sharing).
+We have released the the test sets of H3WB dataset.
+  - [Link to download test set for 2D &rarr; 3D](https://drive.google.com/file/d/1xrzfR63pflnw8L9e631xyKe4TwUOOm4k/view?usp=share_link).
+  - [Link to download test set for I2D &rarr; 3D](https://drive.google.com/file/d/1GBOCjzIW0GLHHLHhGmUcB32Ke8PVjDXH/view?usp=sharing).
+
+Both 2D &rarr; 3D and I2D &rarr; 3D test sets contain 10k triplets of {image, 2D coordinates, 3D coordinates}. Note that, in order to prevent cheating on I2D &rarr; 3D task they have different test samples. 
 
 ### Visualization
 We provide a [function](utils/utils.py) to visualize 3D whole-body, as well as the evaluation function for the leaderboard in  this [script](test_leaderboard.py). 
