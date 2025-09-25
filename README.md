@@ -5,6 +5,7 @@ This is the official repository for the paper ["H3WB: Human3.6M 3D WholeBody Dat
 For the 3D whole-body benchmark and results please refer to [benchmark.md](benchmark.md).
 
 ## 🆕Updates
+- **`2025/09/25`** [Link to download test set for RGB &rarr; 3D](https://drive.google.com/file/d/1imYpHp_cJS2Q5F7wCTMAf45ZygKQAuDV/view?usp=sharing). 
 - **`2024/03/06`** Due to the requests from the community we released the test sets of H3WB dataset. Please refer to [Evaluation](#evaluation) for more information.
   - [Link to download test set for 2D &rarr; 3D](https://drive.google.com/file/d/1xrzfR63pflnw8L9e631xyKe4TwUOOm4k/view?usp=share_link).
   - [Link to download test set for I2D &rarr; 3D](https://drive.google.com/file/d/1GBOCjzIW0GLHHLHhGmUcB32Ke8PVjDXH/view?usp=sharing).
